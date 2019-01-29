@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   return view('welcome');
 });
+
+Route::get('/dashboard', 'DashboardController@index');
+Route::get('/login', 'DashboardController@login');
+Route::get('/forgot', 'DashboardController@forgot');
+Route::get('/register', 'DashboardController@register');
