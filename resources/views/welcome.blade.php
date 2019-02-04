@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Pronto - Client Management System</title>
+    <title>Pronto - Simple Client Management</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
+    <meta content="client management, consultant management software, pronto app" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicons -->
@@ -46,8 +46,8 @@ Header
 
         <div class="logo float-left">
             <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-            <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a>
+            <h1 class="text-light"><a href="#intro" class="scrollto"><img src="img/logo-small-color.png" alt="" class="img-fluid mr-1 mt-1"><span>PRONTO</span></a></h1>
+
         </div>
 
         <nav class="main-nav float-right d-none d-lg-block">
@@ -57,8 +57,8 @@ Header
                 <li><a href="#services">Services</a></li>
                 <li><a href="#clients">Demo</a></li>
                 <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#sign-up" class="btn-sign-up">Sign Up</a></li>
-                <li><a href="#login" class="btn-login">Login</a></li>
+                <li><a href="{{route('register')}}" class="btn-sign-up">Sign Up</a></li>
+                <li><a href="{{route('login')}}" class="btn-login">Login</a></li>
 
             </ul>
         </nav><!-- .main-nav -->
@@ -79,7 +79,7 @@ Header
         <div class="intro-info">
             <h2>Managing clients<br>the <span>easy</span> way.<br></h2>
             <div>
-                <a href="#" class="btn-get-started scrollto">Get Started</a>
+                <a href="{{route('register')}}" class="btn-get-started scrollto">Get Started</a>
                 <a href="#about" class="btn-services scrollto">Learn More</a>
             </div>
         </div>
@@ -112,21 +112,21 @@ Header
 
                     <div class="icon-box wow fadeInUp">
                         <div class="icon"><i class="fa fa-briefcase"></i></div>
-                        <h4 class="title"><a href="">Business Consultant</a></h4>
+                        <h4 class="title"><a>Business Consultant</a></h4>
                         <p class="description">Manage your consultations and assign them to someone in your team. If you
                             work solo, keep track of who needs you.</p>
                     </div>
 
                     <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
                         <div class="icon"><i class="fa fa-wrench"></i></div>
-                        <h4 class="title"><a href="">Handyman</a></h4>
+                        <h4 class="title"><a>Handyman</a></h4>
                         <p class="description">Host a Request Form online so people can reach you at all times. Then
                             message past clients and offer your services.</p>
                     </div>
 
                     <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
                         <div class="icon"><i class="fa fa-book"></i></div>
-                        <h4 class="title"><a href="">Tutor</a></h4>
+                        <h4 class="title"><a>Tutor</a></h4>
                         <p class="description">Students needing your help multiple times a week? No problem. Manage
                             different types of meeting such as homework, Spanish conversation, etc. </p>
                     </div>
@@ -197,7 +197,7 @@ Header
                 <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
                     <div class="box">
                         <div class="icon"><i class="ion-ios-chatboxes-outline" style="color: #ff689b;"></i></div>
-                        <h4 class="title"><a href="">Request Form Online</a></h4>
+                        <h4 class="title"><a>Request Form Online</a></h4>
                         <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
                             excepturi sint occaecati cupiditate non provident</p>
                     </div>
@@ -205,7 +205,7 @@ Header
                 <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
                     <div class="box">
                         <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
-                        <h4 class="title"><a href="">Client Management</a></h4>
+                        <h4 class="title"><a>Client Management</a></h4>
                         <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                             ex ea commodo consequat tarad limino ata</p>
                     </div>
@@ -215,7 +215,7 @@ Header
                      data-wow-duration="1.4s">
                     <div class="box">
                         <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-                        <h4 class="title"><a href="">Appointments</a></h4>
+                        <h4 class="title"><a>Appointments</a></h4>
                         <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                             dolore eu fugiat nulla pariatur</p>
                     </div>
@@ -223,7 +223,7 @@ Header
                 <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                     <div class="box">
                         <div class="icon"><i class="ion-ios-calendar-outline" style="color:#41cf2e;"></i></div>
-                        <h4 class="title"><a href="">Booking</a></h4>
+                        <h4 class="title"><a>Booking</a></h4>
                         <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                             deserunt mollit anim id est laborum</p>
                     </div>
@@ -514,7 +514,7 @@ Header
             <div class="row">
 
                 <div class="col-lg-4 col-md-6 footer-info">
-                    <h3>NewBiz</h3>
+                    <h3>Pronto</h3>
                     <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
                         valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet
                         proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>

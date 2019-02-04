@@ -15,7 +15,15 @@ Route::get('/', function () {
    return view('welcome');
 });
 
-Route::get('/dashboard', 'DashboardController@index');
-Route::get('/login', 'DashboardController@login');
-Route::get('/forgot', 'DashboardController@forgot');
-Route::get('/register', 'DashboardController@register');
+Route::get('/account', 'DashboardController@account')->name('account');
+Route::get('/bookings', 'DashboardController@bookings')->name('bookings');
+Route::get('/clients', 'DashboardController@clients')->name('clients');
+Route::get('/forgot', 'DashboardController@forgot')->name('forgot');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Route::get('/login', 'DashboardController@login')->name('login');
+Route::get('/register', 'DashboardController@register')->name('register');
+Route::get('/request-form', 'DashboardController@requestForm')->name('request-form');
+Route::get('/requests', 'DashboardController@requests')->name('requests');
+Route::get('/settings', 'DashboardController@settings')->name('settings');
+
+Route::resource('clients', 'ClientsController');
