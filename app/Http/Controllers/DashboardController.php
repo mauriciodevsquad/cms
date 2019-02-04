@@ -7,15 +7,13 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function account() {
-        return view('dashboard.account');
+        $title = "Account";
+        return view('dashboard.account')->with('title', $title);
     }
 
     public function bookings() {
-        return view('dashboard.bookings');
-    }
-
-    public function clients() {
-        return view('dashboard.clients');
+        $title = "Bookings";
+        return view('dashboard.bookings')->with('title', $title);
     }
 
     public function forgot() {
@@ -23,7 +21,8 @@ class DashboardController extends Controller
     }
 
     public function index() {
-        return view('dashboard.index');
+        $title = "";
+        return view('dashboard.index')->with('title', $title);
     }
 
     public function login() {
@@ -35,15 +34,18 @@ class DashboardController extends Controller
     }
 
     public function requestForm() {
-        return view('dashboard.request-form');
+        $title = "Request Form";
+        return view('dashboard.request-form')->with('title', $title);
     }
 
     public function requests() {
-        return view('dashboard.requests');
+        $title = "Requests";
+        return view('dashboard.requests')->with('title', $title);
     }
 
     public function settings() {
-        return view('dashboard.settings');
+        $title = "Settings";
+        return view('dashboard.settings')->with('title', $title);
     }
 
 

@@ -3,16 +3,14 @@
 
 @section('content')
 
+
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Request Form</h1>
+    <h1 class="h3 mb-2 text-gray-800">{{ $title }}</h1>
+    <p class="mb-4">Lorem ipsum master header shabuka bigiz liasona.</p>
 
     <!-- Area Chart -->
     <div class="offset-lg-1 col-sm-12 col-lg-10 mt-5">
         <div class="card shadow mb-4">
-            <!-- Card Header - Dropdown -->
-            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Request Form</h6>
-            </div>
             <!-- Card Body -->
             <div class="card-body">
                 <div class="text-center">
