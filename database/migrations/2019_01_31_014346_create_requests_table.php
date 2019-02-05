@@ -15,9 +15,11 @@ class CreateRequestsTable extends Migration
     {
         Schema::create('requests', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('request');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.

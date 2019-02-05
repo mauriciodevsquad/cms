@@ -25,14 +25,6 @@ class DashboardController extends Controller
         return view('dashboard.index')->with('title', $title);
     }
 
-    public function login() {
-        return view('dashboard.login');
-    }
-
-    public function register() {
-        return view('dashboard.register');
-    }
-
     public function requestForm() {
         $title = "Request Form";
         return view('dashboard.request-form')->with('title', $title);
