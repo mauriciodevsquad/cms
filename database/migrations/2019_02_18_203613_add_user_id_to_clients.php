@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRequestsTable extends Migration
+class AddUserIdToClients extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateRequestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('requests', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('request');
-            $table->timestamps();
+        Schema::table('clients', function (Blueprint $table) {
+            $table->integer('user_id');
         });
     }
-
 
     /**
      * Reverse the migrations.
@@ -28,6 +25,8 @@ class CreateRequestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('requests');
+        Schema::table('clients', function (Blueprint $table) {
+            $table->dropColumn('user_id');
+        });
     }
 }

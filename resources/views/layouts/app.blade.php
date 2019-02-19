@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <title>Pronto - Simple Client Management</title>
+    <title>Pronto - Client Management Software</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="client management, consultant management software, pronto app" name="keywords">
     <meta content="" name="description">
@@ -27,7 +27,9 @@ Header
     <div class="container">
 
         <div class="logo float-left">
-            <h1 class="text-light"><a href="#intro" class="scrollto"><img src="img/logo-small-color.png" alt="" class="img-fluid mr-1 mt-1"><span>PRONTO</span></a></h1>
+            <h1 class="text-light"><a href="/" class="scrollto"><img src="img/logo-small-color.png" alt=""
+                                                                     class="img-fluid mr-1 mt-1"><span>PRONTO</span></a>
+            </h1>
 
         </div>
 
@@ -38,15 +40,17 @@ Header
                 <li><a href="#services">Services</a></li>
                 <li><a href="#clients">Demo</a></li>
                 <li><a href="#pricing">Pricing</a></li>
+
                 <!-- Authentication Links -->
                 @guest
-                    <li><a href="{{ route('login') }}" class="btn-login">{{ __('Login') }}</a></li>
                     @if (Route::has('register'))
                         <li><a href="{{ route('register') }}" class="btn-sign-up">{{ __('Register') }}</a></li>
                     @endif
+                    <li><a href="{{ route('login') }}" class="btn-login">{{ __('Login') }}</a></li>
                 @else
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 

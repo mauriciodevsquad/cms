@@ -36,21 +36,21 @@
 
     <!-- Nav Item - Requests -->
     <li class="nav-item">
-        <a class="nav-link" href="{{route('requests')}}">
+        <a class="nav-link" href="/requests">
             <i class="fas fa-fw fa-briefcase"></i>
             <span>Requests</span></a>
     </li>
 
     <!-- Nav Item - Bookings -->
     <li class="nav-item">
-        <a class="nav-link" href="{{route('bookings')}}">
+        <a class="nav-link" href="">
             <i class="fas fa-fw fa-clock"></i>
             <span>Bookings</span></a>
     </li>
 
     <!-- Nav Item - Request Form -->
     <li class="nav-item">
-        <a class="nav-link" href="{{route('request-form')}}">
+        <a class="nav-link" href="">
             <i class="fas fa-fw fa-clipboard-list"></i>
             <span>Request Form</span></a>
     </li>
@@ -66,14 +66,14 @@
 
     <!-- Nav Item - Account -->
     <li class="nav-item">
-        <a class="nav-link" href="{{route('account')}}">
+        <a class="nav-link" href="">
             <i class="fas fa-fw fa-user-circle"></i>
             <span>Account</span></a>
     </li>
 
     <!-- Nav Item - Settings -->
     <li class="nav-item">
-        <a class="nav-link" href="{{route('settings')}}">
+        <a class="nav-link" href="">
             <i class="fas fa-fw fa-cog"></i>
             <span>Settings</span></a>
     </li>

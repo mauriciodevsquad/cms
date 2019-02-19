@@ -368,10 +368,10 @@
 
                 <div class="col-lg-4 mb-4">
                     <div class="card wow bounceInUp">
-                        <i class="">$0</i>
+                        <i class="">U$4.99</i>
                         <div class="card-body">
-                            <h5 class="card-title">Free*</h5>
-                            <p class="card-text">We are currently in open beta, which means that it will be free until Pronto's official release.</p>
+                            <h5 class="card-title">30-Day Trial</h5>
+                            <p class="card-text">No credit card required.</p>
                         </div>
                     </div>
                 </div>

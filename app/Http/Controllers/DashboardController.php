@@ -6,39 +6,23 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function account() {
-        $title = "Account";
-        return view('dashboard.account')->with('title', $title);
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
     }
 
-    public function bookings() {
-        $title = "Bookings";
-        return view('dashboard.bookings')->with('title', $title);
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
+    {
+        return view('dashboard');
     }
-
-    public function forgot() {
-        return view('dashboard.forgot-password');
-    }
-
-    public function index() {
-        $title = "";
-        return view('dashboard.index')->with('title', $title);
-    }
-
-    public function requestForm() {
-        $title = "Request Form";
-        return view('dashboard.request-form')->with('title', $title);
-    }
-
-    public function requests() {
-        $title = "Requests";
-        return view('dashboard.requests')->with('title', $title);
-    }
-
-    public function settings() {
-        $title = "Settings";
-        return view('dashboard.settings')->with('title', $title);
-    }
-
-
 }

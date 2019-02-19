@@ -16,7 +16,7 @@ class ClientsController extends Controller
     {
         $title   = 'Clients';
         $clients = Client::all();
-        return view('dashboard.clients', ['title' => $title, 'clients' => $clients]);
+        return view('clients', ['title' => $title, 'clients' => $clients]);
     }
 
     /**
