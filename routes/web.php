@@ -15,10 +15,12 @@ Route::get('/', function () {
    return view('welcome');
 });
 
-Route::resource('clients', 'ClientsController');
+Route::resource('/clients', 'ClientsController');
 
-Route::resource('requests', 'RequestsController');
+Route::resource('/requests', 'ConsultsController');
 
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+

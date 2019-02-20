@@ -41,12 +41,12 @@
             <span>Requests</span></a>
     </li>
 
-    <!-- Nav Item - Bookings -->
-    <li class="nav-item">
-        <a class="nav-link" href="">
-            <i class="fas fa-fw fa-clock"></i>
-            <span>Bookings</span></a>
-    </li>
+    {{--<!-- Nav Item - Bookings -->--}}
+    {{--<li class="nav-item">--}}
+        {{--<a class="nav-link" href="">--}}
+            {{--<i class="fas fa-fw fa-clock"></i>--}}
+            {{--<span>Bookings</span></a>--}}
+    {{--</li>--}}
 
     <!-- Nav Item - Request Form -->
     <li class="nav-item">

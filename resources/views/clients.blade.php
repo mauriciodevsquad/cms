@@ -24,7 +24,7 @@
                     </tr>
                     </thead>
 
-                    @if($clients->count() > 10)
+                    @if($clients->count() > 7)
                         <tfoot>
                         <tr>
                             <th>Name</th>
@@ -51,7 +51,13 @@
                                 <td><a href="">1</a></td>
                                 <td><a href="">0</a></td>
                                 <td>{{$client->created_at}}</td>
-                                <td></td>
+                                <td>
+                                    {{--<a href="" class="btn btn-info" style="margin-right: 10px;"><i class="fas fa-pen text-center"></i>--}}
+                                    {!! Form::open(['action' => ['ClientsController@destroy', $client->id], 'method' => 'POST']) !!}
+                                        {{ Form::hidden('_method', 'DELETE') }}
+                                        {{ Form::button('<a><i class="fas fa-trash"></i></a>', ['class' => 'btn btn-danger', 'type' => 'submit']) }}
+                                    {!! Form::close() !!}
+                                </td>
                             </tr>
                         @endforeach
                     @else
