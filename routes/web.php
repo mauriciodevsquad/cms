@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Client;
+use App\User;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
    return view('welcome');
@@ -23,12 +26,12 @@ Route::get('/request-form', function () {
     return view('request-form');
 });
 
-Route::get('/user-request-form', function () {
-    return view('user-request-form');
-});
+Route::resource('/user-request-form', 'FormController');
 
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+
 
 

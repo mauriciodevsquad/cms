@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Client;
+use App\User;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -23,6 +25,12 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $title   = 'Dashboard';
+        $user_id = auth()->user()->id;
+        $user    = User::find($user_id);
+        $consults = $user->consults;
+        $user_name = $user->name;
+
+        return view('dashboard', ['title' => $title, 'clients' => $user->clients, 'consults' => $consults, 'user_name' => $user_name]);
     }
 }

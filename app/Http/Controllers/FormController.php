@@ -2,23 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Client;
-use Illuminate\Http\Request;
-use App\Consult;
 use App\User;
+use Illuminate\Http\Request;
 
-class ConsultsController extends Controller
+class FormController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -26,14 +14,12 @@ class ConsultsController extends Controller
      */
     public function index()
     {
-        $title   = 'Requests';
+        $title   = 'Clients';
         $user_id = auth()->user()->id;
-        $user = User::find($user_id);
+        $user    = User::find($user_id);
         $consults = $user->consults;
 
-        $clientsList = Client::all()->sortBy('full_name', SORT_NATURAL | SORT_FLAG_CASE)->pluck('full_name', 'id');
-
-        return view('/consults', ['title' => $title, 'consults' => $consults, 'clientsList' => $clientsList]);
+        return view('user-request-form', ['title' => $title, 'clients' => $user->clients, 'consults' => $consults]);
     }
 
     /**
@@ -43,7 +29,7 @@ class ConsultsController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -54,18 +40,7 @@ class ConsultsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'description' => 'required'
-        ]);
-
-        $consult = new Consult;
-        $consult->description = $request->input('description');
-
-
-        $consult->client_id = $request->input('client_id');
-        $consult->save();
-
-        return redirect('/requests');
+        return redirect('/clients');
     }
 
     /**
@@ -99,17 +74,7 @@ class ConsultsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->validate($request, [
-            'description' => 'required'
-        ]);
-
-        $consult = Consult::find($id);
-        $consult->description = $request->input('description');
-
-        $consult->client_id = $request->input('client_id');
-        $consult->save();
-
-        return redirect('/requests');
+        return redirect('/clients');
     }
 
     /**
@@ -120,8 +85,6 @@ class ConsultsController extends Controller
      */
     public function destroy($id)
     {
-        $consult = Consult::find($id);
-        $consult->delete();
-        return redirect('/requests');
+        //
     }
 }

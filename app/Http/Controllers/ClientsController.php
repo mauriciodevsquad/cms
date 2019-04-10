@@ -28,7 +28,9 @@ class ClientsController extends Controller
         $title   = 'Clients';
         $user_id = auth()->user()->id;
         $user    = User::find($user_id);
-        return view('clients', ['title' => $title, 'clients' => $user->clients]);
+        $consults = $user->consults;
+
+        return view('clients', ['title' => $title, 'clients' => $user->clients, 'consults' => $consults]);
     }
 
     /**

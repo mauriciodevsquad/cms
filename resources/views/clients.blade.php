@@ -56,8 +56,6 @@
                         <th>Email</th>
                         <th>Phone</th>
                         <th>Address</th>
-                        <th>Requests</th>
-                        <th>Bookings</th>
                         <th>Date</th>
                         <th>Edit</th>
                         <th>Delete</th>
@@ -71,8 +69,6 @@
                             <th>Email</th>
                             <th>Phone</th>
                             <th>Address</th>
-                            <th>Requests</th>
-                            <th>Bookings</th>
                             <th>Date</th>
                             <th>Edit</th>
                             <th>Delete</th>
@@ -89,8 +85,6 @@
                                 <td>{{$client->email}}</td>
                                 <td>{{$client->phone}}</td>
                                 <td>{{$client->address}}</td>
-                                <td>1</td>
-                                <td>0</td>
                                 <td>{{$client->created_at}}</td>
                                 <td>
                                     <button href="" class="btn btn-info" data-toggle="modal"
