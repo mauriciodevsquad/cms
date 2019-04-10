@@ -51,7 +51,9 @@ class FormController extends Controller
      */
     public function show($id)
     {
-        //
+        $user_id = auth()->user()->id;
+        $user    = User::find($user_id);
+
     }
 
     /**
