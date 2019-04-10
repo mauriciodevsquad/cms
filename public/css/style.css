@@ -946,6 +946,7 @@ h6 {
 #testimonials {
     padding: 60px 0;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    background: #004a99;
 }
 
 #testimonials .section-header {
@@ -963,7 +964,7 @@ h6 {
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0 5px 0;
-    color: #111;
+    color: #fff;
     margin-left: 140px;
 }
 
@@ -977,6 +978,7 @@ h6 {
 #testimonials .testimonial-item p {
     font-style: italic;
     margin: 0 0 15px 140px;
+    color: #d8eafe;
 }
 
 #testimonials .owl-nav,

@@ -18,12 +18,7 @@ class CreateClientsTable extends Migration
             $table->string('full_name');
             $table->string('email')->unique();
             $table->string('phone');
-            $table->string('street');
-            $table->string('city');
-            $table->string('state');
-            $table->string('zip');
-            $table->string('country');
-
+            $table->string('address');
             $table->timestamps();
         });
     }

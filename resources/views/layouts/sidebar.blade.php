@@ -50,7 +50,7 @@
 
     <!-- Nav Item - Request Form -->
     <li class="nav-item">
-        <a class="nav-link" href="">
+        <a class="nav-link" href="/request-form">
             <i class="fas fa-fw fa-clipboard-list"></i>
             <span>Request Form</span></a>
     </li>

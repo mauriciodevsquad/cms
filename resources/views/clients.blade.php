@@ -6,6 +6,45 @@
     <h1 class="h3 mb-2 text-gray-800">{{ $title }}</h1>
     <p class="mb-4">Lorem ipsum master header shabuka bigiz liasona.</p>
 
+    <button href="" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm mt-3 mb-2" data-toggle="modal"
+            data-target="#myModal"><i
+                class="fas fa-plus fa-sm text-white-50"></i> Create New Client
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    {!! Form::open(['action' => 'ClientsController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+                    <div class="form-group">
+                        {{Form::label('full_name', 'Full Name')}}
+                        {{Form::text('full_name', '', ['class' => 'form-control', 'placeholder' => 'e.g. Mauricio'])}}
+                    </div>
+                    <div class="form-group">
+                        {{Form::label('email', 'Email')}}
+                        {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'e.g. mauricio@gmail.com'])}}
+                    </div>
+                    <div class="form-group">
+                        {{Form::label('phone', 'Phone')}}
+                        {{Form::text('phone', '', ['class' => 'form-control', 'placeholder' => 'e.g. 801-123-1233'])}}
+                    </div>
+                    <div class="form-group">
+                        {{Form::label('address', 'Address')}}
+                        {{Form::text('address', '', ['class' => 'form-control', 'placeholder' => '10123 Sage Vista Avenue, SLC, UT, 84106, USA'])}}
+                    </div>
+                    {{Form::submit('Create', ['class'=>'btn btn-primary'])}}
+                    {!! Form::close() !!}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-body">
@@ -20,7 +59,8 @@
                         <th>Requests</th>
                         <th>Bookings</th>
                         <th>Date</th>
-                        <th>More</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                     </thead>
 
@@ -34,7 +74,8 @@
                             <th>Requests</th>
                             <th>Bookings</th>
                             <th>Date</th>
-                            <th>More</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
                         </tr>
                         </tfoot>
                     @endif
@@ -48,14 +89,55 @@
                                 <td>{{$client->email}}</td>
                                 <td>{{$client->phone}}</td>
                                 <td>{{$client->address}}</td>
-                                <td><a href="">1</a></td>
-                                <td><a href="">0</a></td>
+                                <td>1</td>
+                                <td>0</td>
                                 <td>{{$client->created_at}}</td>
                                 <td>
-                                    {{--<a href="" class="btn btn-info" style="margin-right: 10px;"><i class="fas fa-pen text-center"></i>--}}
+                                    <button href="" class="btn btn-info" data-toggle="modal"
+                                            data-target="#myModal2"><i class="fas fa-pen text-center"></i></button>
+
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal2" role="dialog">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    {!! Form::open(['action' => ['ClientsController@update', $client->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+                                                    <div class="form-group">
+                                                        {{Form::label('full_name', 'Full Name')}}
+                                                        {{Form::text('full_name', $client->full_name, ['class' => 'form-control', 'placeholder' => 'e.g. Mauricio'])}}
+                                                    </div>
+                                                    <div class="form-group">
+                                                        {{Form::label('email', 'Email')}}
+                                                        {{Form::text('email', $client->email, ['class' => 'form-control', 'placeholder' => 'e.g. mauricio@gmail.com'])}}
+                                                    </div>
+                                                    <div class="form-group">
+                                                        {{Form::label('phone', 'Phone')}}
+                                                        {{Form::text('phone', $client->phone, ['class' => 'form-control', 'placeholder' => 'e.g. 801-123-1233'])}}
+                                                    </div>
+                                                    <div class="form-group">
+                                                        {{Form::label('address', 'Address')}}
+                                                        {{Form::text('address', $client->address, ['class' => 'form-control', 'placeholder' => '10123 Sage Vista Avenue, SLC, UT, 84106, USA'])}}
+                                                    </div>
+                                                    {{Form::hidden('_method', 'PUT')}}
+                                                    {{Form::submit('Save Changes', ['class'=>'btn btn-primary'])}}
+                                                    {!! Form::close() !!}
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </td>
+                                <td>
                                     {!! Form::open(['action' => ['ClientsController@destroy', $client->id], 'method' => 'POST']) !!}
-                                        {{ Form::hidden('_method', 'DELETE') }}
-                                        {{ Form::button('<a><i class="fas fa-trash"></i></a>', ['class' => 'btn btn-danger', 'type' => 'submit']) }}
+                                    {{ Form::hidden('_method', 'DELETE') }}
+                                    {{ Form::button('<a><i class="fas fa-trash"></i></a>', ['class' => 'btn btn-danger', 'type' => 'submit']) }}
                                     {!! Form::close() !!}
                                 </td>
                             </tr>
@@ -72,5 +154,6 @@
             </div>
         </div>
     </div>
+
 @endsection
 

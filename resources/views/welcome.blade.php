@@ -15,6 +15,17 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+    <meta property="og:title" content="Pronto - Client Management Software">
+    <meta property="og:description" content="Whether you are a plumber or a multi-million dollar consultant, Pronto has all the tools needed to
+                        manage your clients and consultations. Whatever your industry is, Pronto is ready to help you.">
+    <meta property="og:image" content="http://cms.test/thumbnail.jpg">
+    <meta property="og:url" content="http://cms.test">
+
+    <meta name="twitter:title" content="Pronto - Client Management Software">
+    <meta name="twitter:description" content="Whether you are a plumber or a multi-million dollar consultant, Pronto has all the tools needed to
+                        manage your clients and consultations. Whatever your industry is, Pronto is ready to help you.">
+    <meta name="twitter:image" content="http://cms.test/thumbnail.jpg">
+
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -102,41 +113,49 @@
                 <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
                     <h4>Organize your clients and when they need you</h4>
                     <p>
-                        Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae
-                        perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia
-                        recusandae non ad at et a.
+                        One of the hassles of being a consultant is to remember and keep track of all you clients, so you can contact and follow up with them. Pronto makes this process easy and simple and keeps a list of all your clients!
                     </p>
                     <p>
-                        Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis
-                        deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro
-                        rerum eum eum.
+                        Also, if a existing client or a new one needs you, Pronto creates a web page where they can request
+                        your services. This allows you to publish and share on social media your business and consultation.
                     </p>
                 </div>
-            </div>
-
-            <div class="row about-extra">
-                <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-                    <img src="img/about-extra-1.svg" class="img-fluid" alt="">
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-                    <h4>Keep in touch with all your clients in an simple and stress-free way</h4>
-                    <p>
-                        Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis.
-                        Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis
-                        autem at blanditiis beatae incidunt sunt.
-                    </p>
-                    <p>
-                        Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse
-                        molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-                    </p>
-
-                </div>
-
             </div>
 
         </div>
     </section><!-- #about -->
+
+    <!--==========================
+      Pricing Section
+    ============================-->
+    <section id="pricing" class="wow fadeIn">
+        <div class="container">
+            <header class="section-header">
+                <h3>Pricing</h3>
+                <p>Pronto is an open source project. In other words, it's free!</p>
+            </header>
+
+            <div class="row row-eq-height justify-content-center">
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card wow bounceInUp">
+                        <i class="">U$0</i>
+                        <div class="card-body">
+                            <h5 class="card-title">FREE</h5>
+                            <p class="card-text">No credit card required.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row counters">
+                <div class="col-12 text-center">
+                    <a href="/register" class="btn-get-started scrollto">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--==========================
       Services Section
@@ -155,34 +174,14 @@
                     <div class="box">
                         <div class="icon"><i class="ion-ios-chatboxes-outline" style="color: #ff689b;"></i></div>
                         <h4 class="title"><a>Request Form Online</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                            excepturi sint occaecati cupiditate non provident</p>
+                        <p class="description">Create a request page where clients and leads can ask for your services.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
                     <div class="box">
                         <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
                         <h4 class="title"><a>Client Management</a></h4>
-                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat tarad limino ata</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s"
-                     data-wow-duration="1.4s">
-                    <div class="box">
-                        <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-                        <h4 class="title"><a>Appointments</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                            dolore eu fugiat nulla pariatur</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                    <div class="box">
-                        <div class="icon"><i class="ion-ios-calendar-outline" style="color:#41cf2e;"></i></div>
-                        <h4 class="title"><a>Booking</a></h4>
-                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum</p>
+                        <p class="description">Query through your clients and follow up on requests.</p>
                     </div>
                 </div>
 
@@ -191,97 +190,14 @@
         </div>
     </section><!-- #services -->
 
-    <!--==========================
-      Why Us Section
+<!--==========================
+      Testimonials Section
     ============================-->
-    <section id="why-us" class="wow fadeIn">
-        <div class="container">
-            <header class="section-header">
-                <h3>Why choose us?</h3>
-                <p>With the most simple and intuitive design, Pronto is a perfect fit for anyone! It's so easy to learn
-                    that even a monkey could do it.</p>
-            </header>
-
-            <div class="row row-eq-height justify-content-center">
-
-                <div class="col-lg-4 mb-4">
-                    <div class="card wow bounceInUp">
-                        <i class="fa fa-smile-o"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Easy-to-Learn</h5>
-                            <p class="card-text">Everyone can learn and use Pronto. Less time learning software, more
-                                time building clients.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-4">
-                    <div class="card wow bounceInUp">
-                        <i class="fa fa-anchor"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Reliable</h5>
-                            <p class="card-text">24/7, our system has bullet-proof security and reliability so you never
-                                lose a potential client.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-4">
-                    <div class="card wow bounceInUp">
-                        <i class="fa fa-user-o"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">For Small Business</h5>
-                            <p class="card-text">We built Pronto for small business. You don't need a college degree to
-                                use it. We let you focus on your dream.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row counters">
-
-                <div class="col-12 text-center">
-                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                </div>
-
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!--==========================
-      Clients Section
-    ============================-->
-    <section id="clients" class="section-bg">
-
-        <div class="container">
-
-            <div class="section-header">
-                <h3>Demo</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome
-                    nida.</p>
-            </div>
-
-            <div class="col-12 text-center">
-                <iframe class="demo-video" src="https://www.youtube.com/embed/esaWv1vzUPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!--==========================
-      Clients Section
-    ============================-->
-    <section id="testimonials" class="section-bg">
+    <section id="testimonials" class="section-bg" style="background: #004a99;">
         <div class="container">
 
             <header class="section-header">
-                <h3>Testimonials</h3>
+                <h3 style="color: #ffffff !important;">Testimonials</h3>
             </header>
 
             <div class="row justify-content-center">
@@ -291,55 +207,28 @@
 
                         <div class="testimonial-item">
                             <img src="img/testimonial-1.jpg" class="testimonial-img" alt="">
-                            <h3>Saul Goodman</h3>
-                            <h4>Ceo &amp; Founder</h4>
+                            <h3>David Aguilar</h3>
+                            <h4>Student</h4>
                             <p>
-                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-                                rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                risus at semper.
+                                Pronto is incredibly easy to use and I absolutely recommend it. An easy way to manage clients.
                             </p>
                         </div>
 
                         <div class="testimonial-item">
                             <img src="img/testimonial-2.jpg" class="testimonial-img" alt="">
-                            <h3>Sara Wilsson</h3>
-                            <h4>Designer</h4>
+                            <h3>Vitali Karmanov</h3>
+                            <h4>Software Engineer</h4>
                             <p>
-                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
-                                legam anim culpa.
+                                I love how Pronto has such a simple and intuitive design. I absolutely recommend it for those that want to keep track of their clients and consultations!
                             </p>
                         </div>
 
                         <div class="testimonial-item">
                             <img src="img/testimonial-3.jpg" class="testimonial-img" alt="">
-                            <h3>Jena Karlis</h3>
-                            <h4>Store Owner</h4>
+                            <h3>Valeria Butler</h3>
+                            <h4>Musician</h4>
                             <p>
-                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
-                                duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                            </p>
-                        </div>
-
-                        <div class="testimonial-item">
-                            <img src="img/testimonial-4.jpg" class="testimonial-img" alt="">
-                            <h3>Matt Brandon</h3>
-                            <h4>Freelancer</h4>
-                            <p>
-                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
-                                minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore
-                                labore illum veniam.
-                            </p>
-                        </div>
-
-                        <div class="testimonial-item">
-                            <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
-                            <h3>John Larson</h3>
-                            <h4>Entrepreneur</h4>
-                            <p>
-                                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                                veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
-                                culpa fore nisi cillum quid.
+                                I have always wondered how would I manage my students and clients in an easy way. I have to look no further. Pronto is the best way!
                             </p>
                         </div>
 
@@ -354,42 +243,25 @@
 
 
     <!--==========================
-      Pricing Section
+      Demo Section
     ============================-->
-    <section id="pricing" class="wow fadeIn">
+    <section id="clients" class="section-bg">
+
         <div class="container">
-            <header class="section-header">
-                <h3>Pricing</h3>
-                <p>With the most simple and intuitive design, Pronto is a perfect fit for anyone! It's so easy to learn
-                    that even a monkey could do it.</p>
-            </header>
 
-            <div class="row row-eq-height justify-content-center">
-
-                <div class="col-lg-4 mb-4">
-                    <div class="card wow bounceInUp">
-                        <i class="">U$4.99</i>
-                        <div class="card-body">
-                            <h5 class="card-title">30-Day Trial</h5>
-                            <p class="card-text">No credit card required.</p>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="section-header">
+                <h3>Demo</h3>
+                <p>Here is a video explaining how Pronto works. So easy anyone can do it!</p>
             </div>
 
-            <div class="row counters">
-
-                <div class="col-12 text-center">
-                    <a href="#about" class="btn-get-started scrollto">Get Started</a>
-                </div>
-
+            <div class="col-12 text-center">
+                <iframe class="demo-video" src="https://www.youtube.com/embed/esaWv1vzUPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             </div>
 
         </div>
-    </section>
 
+    </section>
 
     <!--==========================
       Contact Section
@@ -472,9 +344,10 @@
 
                 <div class="col-lg-4 col-md-6 footer-info">
                     <h3>Pronto</h3>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                        valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet
-                        proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                    <p>
+                        Whether you are a plumber or a multi-million dollar consultant, Pronto has all the tools needed to
+                        manage your clients and consultations. Whatever your industry is, Pronto is ready to help you.
+                        </p>
                 </div>
 
                 <div class="col-lg-2 col-md-6 footer-links">
@@ -483,8 +356,6 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Overview</a></li>
                         <li><a href="#">Services</a></li>
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="#">Privacy policy</a></li>
                     </ul>
                 </div>
 
@@ -496,35 +367,12 @@
                         <strong>Phone:</strong> +1 801 897 9002<br>
                         <strong>Email:</strong> kiyama14@gmail.com<br>
                     </p>
-
-                    <div class="social-links">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-3 col-md-6 footer-newsletter">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum
-                        dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
                 </div>
 
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong>TreeMont Dev</strong><br> All Rights Reserved
-        </div>
-    </div>
 </footer><!-- #footer -->
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

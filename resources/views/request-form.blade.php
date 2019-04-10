@@ -1,11 +1,11 @@
-@extends('dashboard.inc.app')
+@extends('layouts.dash-app')
 
 
 @section('content')
 
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">{{ $title }}</h1>
+    <h1 class="h3 mb-2 text-gray-800">Request Form</h1>
     <p class="mb-4">Lorem ipsum master header shabuka bigiz liasona.</p>
 
     <!-- Area Chart -->

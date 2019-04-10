@@ -9,6 +9,16 @@ use App\User;
 class ConsultsController extends Controller
 {
     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -76,7 +86,7 @@ class ConsultsController extends Controller
     public function update(Request $request, $id)
     {
         //
-    }git
+    }
 
     /**
      * Remove the specified resource from storage.

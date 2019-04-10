@@ -19,6 +19,14 @@ Route::resource('/clients', 'ClientsController');
 
 Route::resource('/requests', 'ConsultsController');
 
+Route::get('/request-form', function () {
+    return view('request-form');
+});
+
+Route::get('/user-request-form', function () {
+    return view('user-request-form');
+});
+
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');

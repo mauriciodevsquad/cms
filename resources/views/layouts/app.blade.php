@@ -28,7 +28,7 @@ Header
 
         <div class="logo float-left">
             <h1 class="text-light"><a href="/" class="scrollto"><img src="img/logo-small-color.png" alt=""
-                                                                     class="img-fluid mr-1 mt-1"><span>PRONTO</span></a>
+                                                                     class="img-fluid mr-2 mt-1"><span style="letter-spacing: 2px; text-transform: none !important;">Pronto</span></a>
             </h1>
 
         </div>
