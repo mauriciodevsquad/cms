@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Client;
+use App\Consult;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -14,12 +16,12 @@ class FormController extends Controller
      */
     public function index()
     {
-        $title   = 'Clients';
         $user_id = auth()->user()->id;
         $user    = User::find($user_id);
         $consults = $user->consults;
 
-        return view('user-request-form', ['title' => $title, 'clients' => $user->clients, 'consults' => $consults]);
+        $form = $user_id;
+        return view('user-request-form')->with('form', $form);
     }
 
     /**
@@ -40,7 +42,22 @@ class FormController extends Controller
      */
     public function store(Request $request)
     {
-        return redirect('/clients');
+
+        $client = new Client;
+        $client->full_name = $request->input('full_name');
+        $client->email = $request->input('email');
+        $client->phone = $request->input('phone');
+        $client->address = $request->input('address');
+        $client->user_id = auth()->user()->id;
+        $client->save();
+
+        $consult = new Consult;
+        $consult->description = $request->input('description');
+        $consult->client_id = $client->id;
+        $consult->save();
+
+
+        return redirect('/');
     }
 
     /**
@@ -51,8 +68,13 @@ class FormController extends Controller
      */
     public function show($id)
     {
+
         $user_id = auth()->user()->id;
         $user    = User::find($user_id);
+        $consults = $user->consults;
+
+        $form = $user_id;
+        return view('user-request-form')->with('form', $form);
 
     }
 

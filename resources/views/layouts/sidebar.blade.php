@@ -36,7 +36,7 @@
 
 
     <li class="nav-item">
-        <a class="nav-link" href="/user-request-form">
+        <a class="nav-link" href="/user-request-form/{{auth()->user()->id}}">
             <i class="fas fa-fw fa-clipboard-list"></i>
             <span>Request Form</span></a>
     </li>

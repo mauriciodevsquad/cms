@@ -29,8 +29,7 @@ class DashboardController extends Controller
         $user_id = auth()->user()->id;
         $user    = User::find($user_id);
         $consults = $user->consults;
-        $user_name = $user->name;
 
-        return view('dashboard', ['title' => $title, 'clients' => $user->clients, 'consults' => $consults, 'user_name' => $user_name]);
+        return view('dashboard', ['title' => $title, 'clients' => $user->clients, 'consults' => $consults, 'user_id' => $user_id]);
     }
 }

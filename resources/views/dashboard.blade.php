@@ -70,7 +70,7 @@
             <div class="card-body">
                 <div class="text-center">
                     <h4 class="mt-3">Your request form is online at:</h4>
-                    <a href="/{{$user_name}}" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm mt-3">cms.test/{{$user_name}}</a>
+                    <a href="/user-request-form/{{auth()->user()->id}}" class="d-sm-inline-block btn btn-sm btn-primary shadow-sm mt-3">cms.test/user-request-form/{{auth()->user()->id}}</a>
                 </div>
             </div>
         </div>

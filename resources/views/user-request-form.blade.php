@@ -12,7 +12,7 @@
     <title>Pronto -</title>
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
@@ -20,46 +20,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Custom styles for this template -->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="/css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
-    <style>
-        header.masthead {
-            position: relative;
-            background-color: #343a40;
-            background: url("img/masthead.jpg") no-repeat center center;
-            background-size: cover;
-            padding-top: 8rem;
-            padding-bottom: 8rem;
-        }
-
-        header.masthead .overlay {
-            position: absolute;
-            background-color: #212529;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            opacity: 0.3;
-        }
-
-        header.masthead h1 {
-            font-size: 2rem;
-        }
-
-        @media (min-width: 768px) {
-            header.masthead {
-                padding-top: 12rem;
-                padding-bottom: 12rem;
-            }
-
-            header.masthead h1 {
-                font-size: 3rem;
-            }
-        }
-    </style>
+    <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -87,24 +51,24 @@
 
                                         <div class="p-5">
                                             {!! Form::open(['action' => 'FormController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
-                                            <div class="form-group">
+                                            <div class="form-group text-left">
                                                 {{Form::label('full_name', 'Full Name')}}
                                                 {{Form::text('full_name', '', ['class' => 'form-control', 'placeholder' => 'e.g. Mauricio'])}}
                                             </div>
-                                            <div class="form-group">
+                                            <div class="form-group text-left">
                                                 {{Form::label('email', 'Email')}}
                                                 {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'e.g. mauricio@gmail.com'])}}
                                             </div>
-                                            <div class="form-group">
+                                            <div class="form-group text-left">
                                                 {{Form::label('phone', 'Phone')}}
                                                 {{Form::text('phone', '', ['class' => 'form-control', 'placeholder' => 'e.g. 801-123-1233'])}}
                                             </div>
-                                            <div class="form-group">
+                                            <div class="form-group text-left">
                                                 {{Form::label('address', 'Address')}}
                                                 {{Form::text('address', '', ['class' => 'form-control', 'placeholder' => '10123 Sage Vista Avenue, SLC, UT, 84106, USA'])}}
                                             </div>
 
-                                            <div class="form-group">
+                                            <div class="form-group text-left">
                                                 {{Form::label('description', 'Description')}}
                                                 {{Form::textarea('description', '', ['class' => 'form-control', 'placeholder' => 'Any comments'])}}
                                             </div>
@@ -156,21 +120,21 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="js/sb-admin-2.min.js"></script>
+<script src="/js/sb-admin-2.min.js"></script>
 
 <!-- Page level plugins -->
-<script src="vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
 <!-- Page level custom scripts -->
-<script src="js/demo/datatables-demo.js"></script>
+<script src="/js/demo/datatables-demo.js"></script>
 
 </body>
 
