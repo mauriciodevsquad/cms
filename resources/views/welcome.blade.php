@@ -26,7 +26,6 @@
                         manage your clients and consultations. Whatever your industry is, Pronto is ready to help you.">
     <meta name="twitter:image" content="http://cms.test/thumbnail.jpg">
 
-    <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
 
 @endsection

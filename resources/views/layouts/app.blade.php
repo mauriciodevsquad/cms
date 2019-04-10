@@ -41,7 +41,6 @@ Header
                 <li><a href="#clients">Demo</a></li>
                 <li><a href="#pricing">Pricing</a></li>
 
-                <!-- Authentication Links -->
                 @guest
                     @if (Route::has('register'))
                         <li><a href="{{ route('register') }}" class="btn-sign-up">{{ __('Register') }}</a></li>

@@ -2,7 +2,6 @@
 
 
 @section('content')
-    <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">{{ $title }}</h1>
     <p class="mb-4">Lorem ipsum header shabuka bigiz liasona.</p>
 
@@ -11,7 +10,6 @@
                 class="fas fa-plus fa-sm text-white-50"></i> Create New Request
     </button>
 
-    <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -37,7 +35,6 @@
         </div>
     </div>
 
-    <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-body">
             <div class="table-responsive">
